@@ -3,12 +3,8 @@
  */
 // Load routes
 //var objects = require('../routes/objects');
-var imentor = require('../routes/imentor');
+var fair = require('../routes/fair');
 
 module.exports = function (app) {
-    app.get('/getEmail', imentor.getEmail);
-    app.get('/addEmail', imentor.addEmail);
-    app.get('/addScore', imentor.addScore);
-    app.post('/rateEmail', imentor.rateEmail);
-
+    app.get('/sentiment', fair);
 }
