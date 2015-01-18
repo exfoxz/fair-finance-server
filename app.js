@@ -16,11 +16,11 @@ var port = Number(process.env.PORT || 8000);
 require('./config/init')(app);
 
 // Config database
-var dbConfig = require('./config/database');
+//var dbConfig = require('./config/database');
 
 // Config mongoose
-var db = require('./config/mongoose');
-db.init(dbConfig);
+//var db = require('./config/mongoose');
+//db.init(dbConfig);
 
 // Config Routes
 require('./config/routes')(app);
